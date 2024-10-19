@@ -1,9 +1,16 @@
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  ui.createMenu('Custom Menu')
+    .addItem('GDrive link', 'showFolderPrompt')
+    .addItem('Post', 'postToSocialMedia')
+    .addToUi();
+}
 const businessId = '1373131700291227';
 
 const accessToken = 'EAAGqJkJgmwgBO4o05kEvsYFvwCVcEF17TMwv8t3QXYr22KaLVHsWxN177gzZAGrysPQ6Laf9z9Xdyz3fZCjKH6e6APZCmEkdy2oeuk7o7IxkUnHKHQCR20tgwYbQkZCIZBVgzEIg48HA9AGFTF4AXVd8rGndZA0krnKrYUY4xaB5iAX6ZCdgFBeZCzkJ';
 
 function logStep(step, details) {
-    console.log(`[${new Date().toISOString()}] [${step}] ${details}`);
+    console.log(`[${step}] ${details}`);
 }
 // function createInstagramMedia(accountId, mediaUrl, caption, mediaType) {
 //     logStep('createInstagramMedia', `Creating Instagram media: accountId=${accountId}, mediaType=${mediaType}`);
