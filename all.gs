@@ -22,7 +22,7 @@
 // }
 
 // async function processInstagramMedia(item, mediaType) {
-//   logStep('processInstagramMedia', `Processing Instagram ${mediaType} for row ${item.row}`);
+//   // logStep('processInstagramMedia', `Processing Instagram ${mediaType} for row ${item.row}`);
   
 //   const mediaResponse = await createInstagramMedia(item.accountId, item.mediaUrl, item.caption, mediaType);
 //   if (!mediaResponse || !mediaResponse.id) throw new Error(`Failed to create Instagram ${mediaType}`);
@@ -37,7 +37,7 @@
 // }
 
 // async function createInstagramMedia(accountId, mediaUrl, caption, mediaType) {
-//   logStep('createInstagramMedia', `Creating Instagram media: accountId=${accountId}, mediaType=${mediaType}`);
+//   // logStep('createInstagramMedia', `Creating Instagram media: accountId=${accountId}, mediaType=${mediaType}`);
 //   const url = `https://graph.facebook.com/v20.0/${accountId}/media`;
 //   const payload = {
 //     'access_token': accessToken,
